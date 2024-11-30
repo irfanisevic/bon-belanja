@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bon belanja</title>
+    <style>
+      body {
+        font-family: "courier new", courier, monospace;
+        margin: 20px;
+        background-color: #f9f9f9;
+      }
+      .receipt {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+      .header,
+      .footer {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .details {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+      .items {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .items th,
+      .items td {
+        border-bottom: 1px solid #ddd;
+        padding: 8px 5px;
+        text-align: left;
+      }
+      .items th {
+        font-weight: bold;
+      }
+      .discount {
+        text-decoration: line-through;
+        color: #888;
+        display: block;
+        font-size: 0.9rem;
+      }
+      .discounted-price {
+        color: #000;
+      }
+      .totals {
+        text-align: right;
+        margin-top: 10px;
+      }
+      .totals div {
+        margin-bottom: 5px;
+      }
+      .footer p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="receipt">
+      <!--header section-->
+      <div class="header">
+        <h1>Freshmart Grocery</h1>
+        <p>123 Market Stree, Jakarta</p>
+        <p>Date: Sat 30th November 2024</p>
+      </div>
+
+      <!--purchase detail-->
+      <div class="details">
+        <p>Receipt #12345</p>
+        <p>Cashier: Irfanisevic</p>
+      </div>
+
+      <!--item list-->
+      <table class="items">
+        <thead>
+          <tr>
+            <th>item</th>
+            <th>qty</th>
+            <th>price</th>
+            <th>total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Milk (1L)</td>
+            <td>1</td>
+            <td>$2.50</td>
+            <td>$2.50</td>
+          </tr>
+          <tr>
+            <td>Eggs (12 pack)</td>
+            <td>1</td>
+            <td>
+              <span class="discount">$4.50</span
+              ><span class="discounted-price">$3.99</span>
+            </td>
+            <td>$3.99</td>
+          </tr>
+          <tr>
+            <td>Apple (1 kg)</td>
+            <td>2</td>
+            <td>
+              <span class="discount">$2.30</span
+              ><span class="discounted-price">$1.90</span>
+            </td>
+            <td>$3.80</td>
+          </tr>
+          <tr>
+            <td>Bread (whole grain)</td>
+            <td>1</td>
+            <td>$2.30</td>
+            <td>$2.30</td>
+          </tr>
+          <tr>
+            <td>coffee (200g)</td>
+            <td>1</td>
+            <td>
+              <span class="discount">$5.00</span
+              ><span class="discounted-price">$4.20</span>
+            </td>
+            <td>$4.20</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--total section-->
+      <div class="totals">
+        <div>Subtotal: $16.79</div>
+        <div>Tax (10%): $1.68</div>
+        <div><strong>Total: $18.47</strong></div>
+      </div>
+
+      <!--footer section-->
+      <div class="footer">
+        <p>thankyou for shopping with us!</p>
+        <p>we hope to see you soon!</p>
+      </div>
+    </div>
+  </body>
+</html>
